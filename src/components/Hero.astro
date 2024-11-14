@@ -1,0 +1,91 @@
+---
+import { DOWNLOAD_URL } from '../consts';
+---
+
+<section class="hero">
+    <div class="content">
+        <h1>Capture Slides Effortlessly</h1>
+        <p>Automated Zoom slide capture with AI-powered duplicate detection and one-click PDF generation</p>
+        <div class="cta-buttons">
+            <a href={DOWNLOAD_URL} class="primary-button">Download Now</a>
+            <a href="/features" class="secondary-button">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero {
+        background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .primary-button {
+        background: white;
+        color: var(--accent);
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.2s;
+    }
+
+    .primary-button:hover {
+        transform: translateY(-2px);
+        background: #f0f0f0;
+    }
+
+    .secondary-button {
+        background: transparent;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        border: 2px solid white;
+        font-weight: bold;
+        transition: all 0.2s;
+    }
+
+    .secondary-button:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 720px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+        }
+    }
+</style>
